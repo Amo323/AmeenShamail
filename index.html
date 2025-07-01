@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ameen Shamail | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papbJ8CHbPpm5/ZoQQc6IMDwoNwiF0aTJtRzJ4mErFlkd9IoA9JhObkNjY4Ej3iFJnjF9Z9KMMF+zKNT7O9Q2w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+
+  <div class="vertical-line"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="logo" aria-label="Site Logo">AMEEN SHAMAIL</div>
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Introduction">
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        Who I'm?
+      </h1>
+      <h2><span class="typed-text" aria-live="polite" aria-atomic="true"></span></h2>
+      <p class="hero-subtitle">IT graduated, experience in Computer networks, Computer Skills, AI prompt engineer, and building meaningful tech with simplicity and strength.</p>
+      <a href="#about" class="btn hero-btn">About me</a>
+    </div>
+  </section>
+
+  <main id="maincontent" tabindex="-1">
+
+    <section id="about" class="section about" role="region" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="about-text">
+          <h2 id="about-title">About Me</h2>
+          <p>I am a recent Information Technology graduate from CIS College in Erbil. I'm passionate about learning, skilled in computer networking, website development, and AI prompt engineering. I consistently help others succeed while maintain professionality & mastering my own skills.</p>
+          <ul>
+            <li>Strong foundation in networking and IT</li>
+            <li>Excellent teamwork and leadership abilities</li>
+            <li>Self-driven and always curious to learn more</li>
+          </ul>
+          <p class="signature">— Ameen Shamail</p>
+          <a href="/assets/Ameen CV.pdf" download class="btn resume-btn" aria-label="Download Resume">Download Resume <i class="fas fa-download"></i></a>
+        </div>
+        <div class="about-img">
+          <img src="/assets/Image.jpg" alt="Photo of Ameen Shamail" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills" role="region" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Technical Skills</h2>
+
+        <div class="skills-category">
+          <h3>Networking</h3>
+          <ul class="skills-list skill-bars">
+            <li><span class="skill-name">CCNA</span><div class="skill-bar" style="--skill-level: 90%"></div></li>
+            <li><span class="skill-name">compTIA Network+</span><div class="skill-bar" style="--skill-level: 95%"></div></li>
+            <li><span class="skill-name">Network Configuration</span><div class="skill-bar" style="--skill-level: 85%"></div></li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>Programming & Development</h3>
+          <ul class="skills-list skill-bars">
+            <li><span class="skill-name">Website Development</span><div class="skill-bar" style="--skill-level: 65%"></div></li>
+            <li><span class="skill-name">Laravel & PHP</span><div class="skill-bar" style="--skill-level: 65%"></div></li>
+            <li><span class="skill-name">SQL Databases</span><div class="skill-bar" style="--skill-level: 70%"></div></li>
+          </ul>
+        </div>
+
+        <div class="skills-category">
+          <h3>Tools & Soft Skills</h3>
+          <ul class="skills-list skill-bars">
+            <li><span class="skill-name">AI Prompt Engineering</span><div class="skill-bar" style="--skill-level: 88%"></div></li>
+            <li><span class="skill-name">Microsoft Office</span><div class="skill-bar" style="--skill-level: 90%"></div></li>
+            <li><span class="skill-name">Team Collaboration</span><div class="skill-bar" style="--skill-level: 85%"></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" role="region" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact Me</h2>
+        <p>Email me directly: <a href="mailto:as9950150@gmail.com">as9950150@gmail.com</a></p>
+        <p>Phone: <a href="tel:+0751 840 7975" aria-label="Phone Number"><i class="fas fa-phone"></i> +964 0751 840 7975</a></p>
+        <p>Location: <i class="fas fa-map-marker-alt"></i> Erbil, Iraq</p>
+      </div>
+    </section>
+
+  </main>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer role="contentinfo">
+    <div class="container footer-container">
+      <p>&copy; 2025 Ameen Shamail. All rights reserved.</p>
+      <p class="site-credit">Designed &amp; developed by Ameen Shamail</p>
+    </div>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
