@@ -4,7 +4,7 @@
         title: "Hospital Network",
         description: "Creating a simple Hospital Network.  1 Routers for each branch & 1 as backup for each branch (2811 Router models)",
         technologies: ["Cisco", "IP", "EIGRP", "ACL", "HSRP", "Static NAT", "AAA"],
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        video: "https://www.youtube.com/embed/eHxgkOka1Dw?si=d1HG-ddLTQxQsQ6p"
       },
       2: {
         title: "Police Management System",
@@ -16,13 +16,19 @@
         title: "SwiftLogix Technologies company network",
         description: "A mid-siz network for SwiftLogix Technologies network.",
         technologies: ["Cisco","Basic Security configration ", "VLAN", "IP subnetting", "Inter-VLAN Routing", "Local Username & password", "Message of the day", "CDP", "Port Security", "IP helper"],
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        video: "https://www.youtube.com/embed/TH6xTFY6zN0?si=XNmke0d_lSgApOh4"
       },
       4: {
         title: "This webiste",
         description: "Letting Ai write this website without me doing much of work :)",
         technologies: ["claude.ai", "chatgpt.com"],
         video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      5: {
+        title: "Future Tech Solutions",
+        description: "A mid-siz network for Future-Tech Solutions network.",
+        technologies: ["Basic Security configration", "VLAN (Name)", "Inter-VLAN Routing", "Local Username & password", "Message of the day", "LLDP", "Port Security", "SSH (SSH only allowed)", "ACL (extended Named ACL)", "RIP V2", "ip helper"],
+        video: "https://www.youtube.com/embed/c0qSKU1zs1c?si=Gojt4mQed0D5di3X"
       }
     };
 
