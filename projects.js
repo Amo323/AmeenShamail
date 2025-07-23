@@ -22,7 +22,7 @@
         title: "This webiste",
         description: "Letting Ai write this website without me doing much of work :)",
         technologies: ["claude.ai", "chatgpt.com"],
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        video: "https://www.youtube.com/embed/Kc33kSJXync?si=4FKtxu44jcgPrSke"
       },
       5: {
         title: "Future Tech Solutions",
