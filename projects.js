@@ -10,7 +10,7 @@
         title: "Police Management System",
         description: "A simple web-based police Management System for my graduation project",
         technologies: ["Laravel", "HTML", "CSS", "JS", "PHP", "SQL"],
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        video: "https://www.youtube.com/embed/hXFJHo94FSI?si=COJ5XrOqUQCDkSuO"
       },
       3: {
         title: "SwiftLogix Technologies company network",
@@ -22,7 +22,7 @@
         title: "This webiste",
         description: "Letting Ai write this website without me doing much of work :)",
         technologies: ["claude.ai", "chatgpt.com"],
-        video: "https://www.youtube.com/embed/Kc33kSJXync?si=4FKtxu44jcgPrSke"
+        video: "https://www.youtube.com/embed/Kc33kSJXync?si=CZ04bwz-sKxvF__E"
       },
       5: {
         title: "Future Tech Solutions",
