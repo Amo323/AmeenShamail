@@ -29,6 +29,12 @@
         description: "A mid-siz network for Future-Tech Solutions network.",
         technologies: ["Basic Security configration", "VLAN (Name)", "Inter-VLAN Routing", "Local Username & password", "Message of the day", "LLDP", "Port Security", "SSH (SSH only allowed)", "ACL (extended Named ACL)", "RIP V2", "ip helper"],
         video: "https://www.youtube.com/embed/c0qSKU1zs1c?si=Gojt4mQed0D5di3X"
+      },
+       6: {
+        title: "KoKyu Full stack webiste",
+        description: "A Full stack website with admin pannl, databse in menu, events, Admin mangment. Email sending for events-request, carearr-application. Category changes, Modern design.",
+        technologies: ["Laravel", "PHP", "HTML", "CSS","JS","MYSQL"],
+        video: "https://www.youtube.com/embed/gkn2KNbAcVo?si=eqeoKxPuuh7QHYON"
       }
     };
 
