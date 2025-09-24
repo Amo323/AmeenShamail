@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phrases = [
       'Network Engineer.',
       'Web Developer.',
-      'AI prompt engineering.',
-      'Tech Problem Solver.'
+      'AI prompt engineering.'
     ];
     let phraseIndex = 0;
     let letterIndex = 0;
