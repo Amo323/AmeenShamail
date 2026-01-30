@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedTextSpan = document.querySelector('.typed-text');
   if (typedTextSpan) {
     const phrases = [
-      'Network Engineer.',
+      'Computer engineering Student.',
+      'information technology.',
+      'Student at learning Embedded Systems.',
+      'Lebanese French University-LFU Student.',
       'Web Developer.',
       'AI prompt engineering.'
     ];
@@ -11,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let letterIndex = 0;
     let currentPhrase = '';
     let isDeleting = false;
-    const typingSpeed = 100;
+    const typingSpeed = 50;
     const deletingSpeed = 50;  // Made deleting faster for better effect
     const delayBetweenPhrases = 2000;  // Pause when fully typed
     const delayAfterDelete = 1000;  // Short pause after deleting
