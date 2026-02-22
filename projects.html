@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ameen Shamail | Projects</title>
+  <meta name="description" content="Projects by Ameen Shamail — networking, web development, and AI work." />
+  <link rel="stylesheet" href="projects.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+  <div class="accent-line"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Ameen Shamail — Home">
+        <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link active">Projects</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/ameenshamal/" target="_blank" rel="noopener" class="icon-btn"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Amo323" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ===== HERO ===== -->
+      <section class="hero-section" id="projects">
+        <p class="section-label reveal">— Portfolio</p>
+        <h1 class="hero-title reveal">My Projects</h1>
+        <p class="hero-subtitle reveal">A collection spanning networking, web development, and AI technologies</p>
+      </section>
+
+      <!-- ===== FILTER TABS ===== -->
+      <section class="filter-tabs reveal" aria-label="Project filters">
+        <button class="filter-tab active" data-filter="all">
+          <i class="fas fa-th-large"></i> All Projects
+        </button>
+        <button class="filter-tab" data-filter="network">
+          <i class="fas fa-network-wired"></i> Networking
+        </button>
+        <button class="filter-tab" data-filter="web">
+          <i class="fas fa-code"></i> Web Development
+        </button>
+        <button class="filter-tab" data-filter="AI">
+          <i class="fas fa-robot"></i> AI
+        </button>
+      </section>
+
+      <!-- ===== PROJECTS GRID ===== -->
+      <section class="projects-grid" id="projectsGrid" aria-label="Projects">
+
+        <article class="project-card visible" data-category="network">
+          <div class="project-image">
+            <img src="./assets/Hospital-Network-unsplash.jpg" alt="Hospital Network" loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="1">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Networking</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Hospital Network Simulation</h3>
+            <p class="project-description">Architected a multi-branch hospital network with 1 primary + 1 backup Cisco
+              2811 router per branch, ensuring fault tolerance for critical medical systems. (Feb–Apr 2024)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Cisco</span>
+              <span class="tech-tag">EIGRP</span>
+              <span class="tech-tag">HSRP</span>
+              <span class="tech-tag">ACL</span>
+              <span class="tech-tag">Static NAT</span>
+              <span class="tech-tag">AAA</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card visible" data-category="web">
+          <div class="project-image">
+            <img src="./assets/Police image.jpg" alt="Police Management System" loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="2">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Web Dev</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Police Management System</h3>
+            <p class="project-description">Engineered a web-based management system for police data tracking and
+              organizational workflows — my graduation project. Features role-based access and case management. (Dec
+              2024–Jan 2025)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card visible" data-category="network">
+          <div class="project-image">
+            <img src="./assets/SwiftLogix Technologies network.jpg" alt="SwiftLogix Technologies Network"
+              loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="3">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Networking</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">SwiftLogix Technologies Network</h3>
+            <p class="project-description">Designed a mid-size corporate network for SwiftLogix Technologies featuring
+              VLANs, inter-VLAN routing, port security, CDP, and DHCP relay. (Jun 2025)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">VLAN</span>
+              <span class="tech-tag">Inter-VLAN</span>
+              <span class="tech-tag">Port Security</span>
+              <span class="tech-tag">CDP</span>
+              <span class="tech-tag">IP Helper</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card visible" data-category="web">
+          <div class="project-image">
+            <img src="./assets/Ameen shamil profolio webiste.png" alt="Portfolio Website" loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="4">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Web Dev</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">Builying it while leveraging the power of AI-assisted development techniques
+              using LLMs
+              for code
+              generation, debugging, and documentation. "Letting AI do the magic while I do the planing, design, and
+              other task if the LLM makes any mistakes." (May–Jun 2025)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">claude.ai</span>
+              <span class="tech-tag">ChatGPT</span>
+              <span class="tech-tag">HTML/CSS/JS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card visible" data-category="network">
+          <div class="project-image">
+            <img src="./assets/FutureTech Solutions.png" alt="FutureTech Solutions Network" loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="5">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Networking</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FutureTech Solutions Network</h3>
+            <p class="project-description">Designed a mid-size corporate network with advanced security — SSH-only
+              access, Named Extended ACLs, RIP v2 routing, LLDP neighbor discovery, and port security. (Jun 2025)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">VLAN</span>
+              <span class="tech-tag">SSH</span>
+              <span class="tech-tag">ACL</span>
+              <span class="tech-tag">RIP v2</span>
+              <span class="tech-tag">LLDP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card visible" data-category="web">
+          <div class="project-image">
+            <img src="./assets/KoKyu Full stack webiste.png" alt="KoKyu Full Stack Website" loading="lazy" />
+            <div class="project-overlay">
+              <button class="overlay-btn modal-trigger" data-project="6">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+            <span class="project-category-badge">Web Dev</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">KoKyu Full-Stack Web Application</h3>
+            <p class="project-description">Developed a comprehensive platform with an admin panel, dynamic database
+              menus, events management, career applications, and automated email notifications for event requests.
+              (Aug–Sep 2025)</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">HTML/CSS/JS</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== MODAL ===== -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2025 Ameen Shamail. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:as9950150@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ameenshamal/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Amo323" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+</body>
+
+</html>

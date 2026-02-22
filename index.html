@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ameen Shamail | Computer Engineering Student & Developer</title>
+  <meta name="description"
+    content="Portfolio of Ameen Shamail — Computer Engineering student at LFU, top IT graduate from CIS College, Full-Stack Developer, Network Engineer, and AI Prompt Engineer based in Erbil, Iraq." />
+
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Left accent line -->
+  <div class="accent-line"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Ameen Shamail — Home">
+        <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/ameenshamal/" target="_blank" rel="noopener" class="icon-btn"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Amo323" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Introduction">
+    <div class="container hero-content">
+      <p class="hero-eyebrow reveal">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal">Ameen Shamail</h1>
+      <h2 class="hero-role">
+        <span class="typed-text" aria-live="polite" aria-atomic="true"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-subtitle reveal">Full-Stack Developer &amp; Network Engineer based in Erbil, Iraq, building
+        real-world solutions with clarity and precision.</p>
+      <div class="hero-cta reveal">
+        <a href="#about" class="btn btn-primary">Explore My Work</a>
+        <a href="assets/Ameen_shamail_CV.pdf" download class="btn btn-ghost">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-scroll-hint reveal">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN ===== -->
+  <main id="maincontent" tabindex="-1">
+
+    <!-- === ABOUT === -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <img src="./assets/Image.jpg" alt="Photo of Ameen Shamail" loading="lazy" />
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <span>IT Graduate</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label reveal">— About Me</p>
+          <h2 id="about-title" class="reveal">Who I Am</h2>
+          <p class="reveal">I am a dedicated Computer Engineering student at Lebanese French University (LFU) and a
+            top-performing IT graduate (90–100% average) from CIS College in Erbil. I apply my skills in full-stack
+            development (Laravel), CCNA networking, and AI prompt engineering to build real-world solutions.</p>
+          <p class="reveal">Beyond technical work, I have honed my leadership and communication skills by mentoring 11
+            classmates and copywriting for international remote teams. Trilingual and proactive — ready to bring value
+            to any professional engineering environment.</p>
+          <ul class="about-list reveal">
+            <li><i class="fas fa-graduation-cap"></i> Top IT Graduate · 90–100% academic average at CIS College</li>
+            <li><i class="fas fa-users"></i> Mentored 11 peers in networking, SQL &amp; web development</li>
+            <li><i class="fas fa-brain"></i> Self-driven learner — trilingual &amp; always curious</li>
+          </ul>
+          <p class="signature reveal">— Ameen Shamail</p>
+          <a href="assets/Ameen_shamail_CV.pdf" download class="btn btn-primary resume-btn reveal"
+            aria-label="Download Resume">
+            Download Resume <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === SKILLS === -->
+    <section id="skills" class="section skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-label text-center reveal">— What I Know</p>
+        <h2 id="skills-title" class="text-center reveal">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fas fa-network-wired"></i> Networking</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+                <span class="skill-label">CCNA Routing &amp; Switching</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                <span class="skill-label">LAN/WAN Design</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:88%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                <span class="skill-label">Cisco Packet Tracer</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fas fa-code"></i> Full-Stack Development</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                <span class="skill-label">Laravel (Full-Stack)</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:82%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <span class="skill-label">HTML · CSS · JavaScript</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <span class="skill-label">SQL / Database Management</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fas fa-tools"></i> Tools &amp; Other Skills</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                <span class="skill-label">AI Prompt Engineering</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:92%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-film"></i></div>
+                <span class="skill-label">Video Editing</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:65%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-headset"></i></div>
+                <span class="skill-label">Technical Support</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fas fa-language"></i> Languages</h3>
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-icon">KU</div>
+                <span class="skill-label">Kurdish (Native)</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:100%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">AR</div>
+                <span class="skill-label">Arabic (Intermediate)</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:65%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">US</div>
+                <span class="skill-label">English (Intermediate)</span>
+                <div class="skill-progress">
+                  <div class="skill-fill" style="--pct:75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- === EXPERIENCE === -->
+    <section id="experience" class="section experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="section-label reveal">— Career</p>
+        <h2 id="experience-title" class="reveal">Work Experience</h2>
+        <p class="section-sub reveal">My professional journey</p>
+
+        <div class="timeline">
+
+          <!-- Work: TOVALA -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-top">
+                <div class="tc-left">
+                  <span class="tc-badge">Volunteer</span>
+                  <h3 class="tc-role">Digital Support &amp; Copywriter</h3>
+                  <span class="tc-company"><i class="fas fa-building"></i> TOVALA</span>
+                </div>
+                <div class="tc-right">
+                  <span class="tc-date"><i class="fas fa-calendar-alt"></i> Jan 2024 – Dec 2024</span>
+                  <span class="tc-location"><i class="fas fa-globe"></i> Remote</span>
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>Optimized email marketing campaigns and social media content, increasing click-through rates (CTR)
+                  and user engagement.</li>
+                <li>Enhanced brand awareness through strategic social media management for an international team.</li>
+                <li>Collaborated in a remote environment, utilizing digital tools to streamline communication and
+                  project delivery.</li>
+              </ul>
+              <div class="tc-tags">
+                <span>Email Marketing</span>
+                <span>Copywriting</span>
+                <span>Social Media</span>
+                <span>Remote Collaboration</span>
+                <span>Brand Awareness</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- === EDUCATION === -->
+    <section id="education" class="section experience" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-label reveal">— Academic Background</p>
+        <h2 id="education-title" class="reveal">Education</h2>
+        <p class="section-sub reveal">My academic journey</p>
+
+        <div class="timeline">
+
+          <!-- Education: LFU -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-top">
+                <div class="tc-left">
+                  <span class="tc-badge">Current</span>
+                  <h3 class="tc-role">B.Sc. Computer Engineering</h3>
+                  <span class="tc-company"><i class="fas fa-university"></i> Lebanese French University (LFU),
+                    Erbil</span>
+                </div>
+                <div class="tc-right">
+                  <span class="tc-date"><i class="fas fa-calendar-alt"></i> Nov 2025 – Present</span>
+                  <span class="tc-location"><i class="fas fa-map-marker-alt"></i> Erbil, Iraq</span>
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>Focusing on hardware-software integration, system architecture, and advanced engineering
+                  mathematics.</li>
+              </ul>
+              <div class="tc-tags">
+                <span>Computer Engineering</span>
+                <span>System Architecture</span>
+                <span>Hardware/Software Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education: CIS College -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-top">
+                <div class="tc-left">
+                  <span class="tc-badge">Graduate</span>
+                  <h3 class="tc-role">Diploma in Information Technology</h3>
+                  <span class="tc-company"><i class="fas fa-university"></i> CIS College, Erbil</span>
+                </div>
+                <div class="tc-right">
+                  <span class="tc-date"><i class="fas fa-calendar-alt"></i> Sep 2020 – May 2025</span>
+                  <span class="tc-location"><i class="fas fa-map-marker-alt"></i> Erbil, Iraq</span>
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>Maintained a <strong>90–100% grade average</strong> across all core technical modules.</li>
+                <li>Mentored 11 peers in networking, SQL &amp; web development.</li>
+                <li>Deepened expertise in Networking, Microsoft 365, SQL, and Full-Stack Web Development (Laravel, JS).
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Networking</span>
+                <span>Laravel / JS</span>
+                <span>SQL</span>
+                <span>Microsoft 365</span>
+                <span>90–100% Average</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- === CONTACT === -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section-label text-center reveal">— Say Hello</p>
+        <h2 id="contact-title" class="text-center reveal">Get In Touch</h2>
+        <p class="contact-intro text-center reveal">I'm open to opportunities, collaborations, and
+          conversations.<br>Feel free to reach out through any of the channels below.</p>
+
+        <div class="contact-grid">
+          <a href="mailto:as9950150@gmail.com" class="contact-card glass-card reveal" aria-label="Send Email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">as9950150@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="tel:+9647518407975" class="contact-card glass-card reveal" aria-label="Phone">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+964 751 840 7975</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <div class="contact-card glass-card reveal">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Erbil, Iraq</span>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/ameenshamal/" target="_blank" rel="noopener"
+            class="contact-card glass-card reveal" aria-label="LinkedIn">
+            <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Ameen Shamail</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2025 Ameen Shamail. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:as9950150@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ameenshamal/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Amo323" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
