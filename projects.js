@@ -17,7 +17,7 @@ const projects = {
     title: "Police Management System",
     category: "Web Development",
     description: "Engineered a web-based management system for police data tracking and organizational workflows as a graduation project. Features role-based access control, case tracking, and officer record management. (Dec 2024 – Jan 2025)",
-    technologies: ["Laravel", "HTML", "CSS", "JavaScript", "PHP", "SQL"],
+    technologies: ["Laravel", "HTML", "CSS", "JavaScript", "PHP", "SQL", "AI"],
     video: "https://www.youtube.com/embed/hXFJHo94FSI?si=COJ5XrOqUQCDkSuO"
   },
   3: {
@@ -47,6 +47,13 @@ const projects = {
     description: "Developed a comprehensive full-stack platform featuring an administrative panel, dynamic database-driven menus, events management system, career application portal, and automated email notification systems for event requests and career applications. (Aug 2025 – Sep 2025)",
     technologies: ["Laravel", "PHP", "HTML", "CSS", "JavaScript", "MySQL"],
     video: "https://www.youtube.com/embed/gkn2KNbAcVo?si=eqeoKxPuuh7QHYON"
+  },
+  7: {
+    title: "NEXUS 3D Website",
+    category: "Web Development",
+    description: "Developed a comprehensive platform with 4 page modern design and interactive 3D elements using Spline and Online Components. (Feb 2026)",
+    technologies: ["Spline", "Online Components", "HTML/CSS/JS"],
+    video: "https://www.youtube.com/embed/Na1N-BtdtX4?si=jBu2miDGdMuWiNl1"
   }
 };
 
