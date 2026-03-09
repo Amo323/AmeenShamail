@@ -53,7 +53,7 @@ const projects = {
     category: "Web Development",
     description: "Developed a comprehensive platform with 4 page modern design and interactive 3D elements using Spline and Online Components. (Feb 2026)",
     technologies: ["Spline", "Online Components", "HTML/CSS/JS"],
-    video: "https://www.youtube.com/embed/Na1N-BtdtX4?si=jBu2miDGdMuWiNl1"
+    video: "https://www.youtube.com/embed/x3SHq3p3mcE?si=FnxM0AJaRk_jbGoN"
   }
 };
 
