@@ -54,6 +54,13 @@ const projects = {
     description: "Developed a comprehensive platform with 4 page modern design and interactive 3D elements using Spline and Online Components. (Feb 2026)",
     technologies: ["Spline", "Online Components", "HTML/CSS/JS"],
     video: "https://www.youtube.com/embed/x3SHq3p3mcE?si=FnxM0AJaRk_jbGoN"
+  },
+  8: {
+    title: "textbooksolutions.shop website",
+    category: "Web Development",
+    description: "Developed a comprehensive platform with HTML, CSS, JS, PHP, MYSQL and connecting it with stripe payment with ongoing maintenance and updates. (Mar-present 2026) <br><br><a href='https://textbooksolutions.shop/' target='_blank' rel='noopener' class='project-link'>Visit <i class='fas fa-external-link-alt'></i></a> <span class='vpn-notice'>(VPN may be needed if the site is not visible)</span>",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Stripe Payment", "hosting & maintenance", "Live website"],
+    video: "https://www.youtube.com/embed/ao8Jz7Z84eQ?si=i3_vUBJQqYAbAYg0"
   }
 };
 
@@ -204,6 +211,16 @@ projectCards.forEach((card, i) => {
 });
 
 // ============================================================
+// LIVE WEBSITE BADGES
+// ============================================================
+document.querySelectorAll('.tech-tag').forEach(tag => {
+  const text = tag.textContent.trim().toLowerCase();
+  if (text === 'live website' || text === 'live webiste') {
+    tag.classList.add('live-website');
+  }
+});
+
+// ============================================================
 // FILTER TABS
 // ============================================================
 filterTabs.forEach(tab => {
@@ -252,7 +269,11 @@ function openModal(projectId) {
     <div class="modal-technologies">
       <h3>Technologies Used</h3>
       <div class="tech-list">
-        ${p.technologies.map(t => `<span class="tech-badge">${t}</span>`).join('')}
+        ${p.technologies.map(t => {
+          const text = t.trim().toLowerCase();
+          const isLiveSite = text === 'live website' || text === 'live webiste';
+          return `<span class="tech-badge ${isLiveSite ? 'live-website' : ''}">${t}</span>`;
+        }).join('')}
       </div>
     </div>
   `;

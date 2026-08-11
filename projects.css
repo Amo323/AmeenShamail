@@ -86,19 +86,6 @@ body {
 }
 
 /* ============================================================
-   ACCENT LINE
-   ============================================================ */
-.accent-line {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 100vh;
-  background: linear-gradient(180deg, var(--electric), var(--warm), transparent);
-  z-index: 100;
-}
-
-/* ============================================================
    LAYOUT
    ============================================================ */
 .container {
@@ -430,6 +417,12 @@ h3 {
   opacity: 1;
 }
 
+@media (min-width: 800px) {
+  .project-card.featured {
+    grid-column: span 2;
+  }
+}
+
 /* Image */
 .project-image {
   position: relative;
@@ -531,6 +524,40 @@ h3 {
   line-height: 1.65;
 }
 
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--electric);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--t-fast);
+  margin-top: 0.25rem;
+}
+
+.project-link:hover {
+  color: var(--white);
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.4);
+}
+
+.project-link i {
+  font-size: 0.85rem;
+  transition: transform var(--t-fast);
+}
+
+.project-link:hover i {
+  transform: translateX(4px);
+  color: var(--electric);
+}
+
+.vpn-notice {
+  font-size: 0.75rem;
+  color: var(--slate);
+  opacity: 0.8;
+  margin-left: 0.5rem;
+  font-style: italic;
+}
+
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -552,6 +579,14 @@ h3 {
 .tech-tag:hover {
   background: rgba(100, 255, 218, 0.15);
   border-color: var(--electric);
+}
+
+.tech-tag.live-website,
+.tech-badge.live-website {
+  background: #ff0000 !important;
+  color: #ffffff !important;
+  border-color: #ff0000 !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 /* ============================================================
