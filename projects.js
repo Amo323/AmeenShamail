@@ -30,7 +30,7 @@ const projects = {
   4: {
     title: "Portfolio Website",
     category: "Web Development",
-    description: "Builying it while leveraging the power of AI-assisted development techniques using LLMs for code generation, debugging, and documentation. Letting AI do the magic while I do the planing, design, and other task if the LLM makes any mistakes. (May–Jun 2025)",
+    description: "Building it while leveraging the power of AI-assisted development techniques using LLMs for code generation, debugging, and documentation. Letting AI do the magic while I do the planing, design, and other task if the LLM makes any mistakes. (May–Jun 2025)",
     technologies: ["claude.ai", "ChatGPT", "HTML", "CSS", "JavaScript", "AI Prompt Engineering"],
     video: "https://www.youtube.com/embed/Kc33kSJXync?si=CZ04bwz-sKxvF__E"
   },
